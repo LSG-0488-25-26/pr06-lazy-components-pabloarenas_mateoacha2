@@ -32,14 +32,6 @@ Esta app muestra una lista de 9 perros de diferentes razas. Cada perro se muestr
   - Los datos se cargan manualmente (9 perros)
   - Las vistas observan los cambios mediante LiveData
 
-## Tecnologias Usadas
-
-- **Jetpack Compose**: Para la UI
-- **Navigation Compose**: Para navegar entre pantallas
-- **LiveData**: Para gestionar datos reactivos
-- **ViewModel**: Para separar la logica de la vista
-- **LazyColumn**: Para mostrar listas eficientemente
-
 ## API Utilizada
 
 Se usa como referencia la **Dog CEO API** (https://dog.ceo/dog-api/), aunque en esta practica los datos NO se consumen directamente de la API. Las imagenes se descargaron manualmente y se colocaron en `app/res/drawable/`, y los objetos Dog se instanciaron manualmente en el `DogViewModel`.
@@ -57,13 +49,6 @@ implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
 implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
 ```
 
-## Instalacion y Ejecucion
-
-1. Clonar el repositorio
-2. Abrir el proyecto en Android Studio
-3. Sincronizar las dependencias de Gradle
-4. Ejecutar la aplicacion en un emulador o dispositivo fisic
-
 ## Capturas de Pantalla
 
 ### Pantalla Principal (Lista)
@@ -74,20 +59,7 @@ implementation("androidx.compose.runtime:runtime-livedata:1.5.4")
 
 ![Detalle de perro](capturas/Captura%20de%20pantalla%202026-01-14%20224320.png)
 
-## Funcionalidades Implementadas
-
-- Estructuras de datos (Dog, DogBreed)
-- 9 perros instanciados manualmente con sus imagenes
-- Arquitectura MVVM con LiveData
-- Navegacion entre pantallas
-- Elementos clickables que navegan al detalle
-- LazyColumn para mostrar la lista
-
 ## Autores
 
 - Pablo Arenas
 - Mateo Acha
-
-## Licencia
-
-Proyecto academico para la asignatura DAM2 0488: Desarrollo de interfaces.
